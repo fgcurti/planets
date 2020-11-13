@@ -1,0 +1,62 @@
+<!doctype html>
+<!-- Web page "Planet Info"     -->
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="css/planetinfo.css?v=1">
+
+<title>Planet Info?</title>
+
+</head>
+
+<body>
+
+<img class="hero" src="images/marslandscape.PNG" alt="banner">
+
+<h1 class='section-heading'>Planet Info?</h1>
+<h2 class='section-subheading'>Search by Planets</h2>
+<div class="section-description">
+  <p class="section-subheading">
+    <form id="query-form">
+     <div class="button">
+        <br />
+        <input class="button" type="button" value="Reset" id="resetButton" onClick="this.form.reset();resetResults()" />
+        <input class="button" type="submit" value="Search Planets" id="searchButton" />
+      </div>
+    </form>
+  </p>
+
+
+  <h2 class='section-subheading'>Add New Planets</h2>
+  <p class="section-subheading">
+    <form id="query-form-set">
+      <div>
+        <label for="planet">New Planet Name:</label><input class="textfield" id="planet" type="text" name="planet" placeholder="e.g. Mars, Jupiter"/>
+      </div>
+      <div>
+        <label for="type">Planet Type:</label><input class="textfield" id="type" type="text" name="type" placeholder="e.g. terrestial"/></div>
+      <div class="button">
+        <br />
+        <input class="button" type="button" value="Reset" id="resetButton" onClick="this.form.reset();resetResults()" />
+        <input class="button" type="submit" value="Add Planet" id="addButton" />
+      </div>
+    </form>
+  </p>
+
+<div class="section-subheading" id="search-results-heading"></div>
+<div class="results-div" id="results"></div>
+
+</body>
+
+<footer>
+  <div class="section-divider"><img src="images/r75.gif"></div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/planetinfo.js?v=1"></script>
+
+</html>
